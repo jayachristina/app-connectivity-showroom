@@ -19,15 +19,15 @@ oc whoami
 oc login -u admin -p {ocp_cluster_openshift_cluster_admin_password} https://172.30.0.1:443
 ----
 
-== Activity: Platform Engineer workflow
+== Review initial set up
 
 . Click to navigate to {ocp_cluster_openshift_cluster_console_url}/kuadrant/overview[Connectivity Link Overview^, window='content'], and 
-log in with username `admin` and password `{ocp_cluster_openshift_cluster_admin_password}`if prompted.
+log in with username `admin` and password `{ocp_cluster_openshift_cluster_admin_password}` if prompted.
 +
-image:m3/rhcl-console-view.png[] 
+image:m3/rhcl-console-view.png[link=self, window=blank, width=100%] 
 . In the *Overview* section, you will notice that a *Gateway*, a *TLSPolicy*, a *DNSPolicy*, and an `echo-api` *HTTPRoute* have been pre-configured. 
 +
-image:m3/rhcl-inital-overview.png[]
+image:m3/rhcl-inital-overview.png[link=self, window=blank, width=100%]
 
 +
 [CAUTION]
@@ -223,7 +223,7 @@ There is a possibility that you may face such an error: `curl: (6) Could not res
 . Navigate to {rhcl}'s {ocp_cluster_openshift_cluster_console_url}/kuadrant/policy-topology[Policy Topology^, window="console"].
 . Note that the Auth, DNS, Rate Limit, and TLS policies are all attached to the `prod-web` Gateway, and are inherited by the `echo-api` HTTRoute.
 +
-image:m3/echoapi-topology.png[] 
+image:m3/echoapi-topology.png[link=self, window=blank, width=100%] 
 
 
 == Summary

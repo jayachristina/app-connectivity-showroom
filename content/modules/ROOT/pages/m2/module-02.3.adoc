@@ -22,7 +22,7 @@ In this activity, you'll simulate a real-world **canary deployment** strategy by
 
 NOTE: Canary deployment is a strategy where a new version (the canary) is tested before all of the old instances are replaced
 
-image:m2/canary.png[]
+image:m2/canary.png[width=60%]
 
 You will define the `DestinationRule` and `VirtualService` resources which together to control how traffic is routed between services, and are essential tools for managing traffic flow, enabling advanced deployment strategies like canary releases, blue/green deployments, and A/B testing.
 
@@ -162,6 +162,6 @@ spec:
 
 . Wait for the deployment to scale to 1 pod successfully.
 +
-image:m2/discounts-v2-deployment.png[]
+image:m2/discounts-v2-deployment.png[link=self, window=blank, width=100%]
 +
 NOTE: The `version: v2` label in the `discounts-v2` Deployment CRD is essential for enabling Istio's traffic routing.

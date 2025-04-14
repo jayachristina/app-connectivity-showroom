@@ -16,7 +16,7 @@ Some parameters have been preset in this link for easier access. Refresh rate is
 
 . The *Traffic Graph* shows service interactions, request rates, and HTTP status codes. This graph helps us identify services that may have problems. In our example, everything is green and healthy! 
 +
-image:m2/kiali-graph.png[]
+image:m2/kiali-graph.png[link=self, window=blank, width=100%] 
 +
 NOTE: Since enabled sidecar injection just a while ago, it may take a minute or two for  the graph to show the updated metrics.
 
@@ -34,7 +34,7 @@ image:m2/kiali-workloads-travel.png[]
 
 . The *Overview tab* gives a high-level summary of the selected workload, including its health status and traffic metrics. It helps you quickly assess how a workload performs and interacts within the mesh.
 +
-image:m2/kiali-workloads-overview.png[Overview]
+image:m2/kiali-workloads-overview.png[link=self, window=blank, width=100%] 
 
 
 .[underline]#Optional Activity: Detailed metrics exploration#
